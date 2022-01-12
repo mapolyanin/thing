@@ -38,6 +38,7 @@ class CardDeck():
     """
     Класс колоды карт.
     Свойства:
+        
         Всего карт в колоде
         Осталось карт в колоде
         Список карт в виде словаря:
@@ -77,6 +78,7 @@ class CardDeck():
 class Card():
     """
     Свойства:
+    Идентификатор карты
     Тип карты:  событие или паника
     Подтип карты: инфекция, действия, защиты, препятсвия
     Действие карты: прописать через json
@@ -84,11 +86,11 @@ class Card():
     Карта закреплена: True False (для зараженных)
     Применимо для количества игроков: int
     """
-    def __init__(self, card_type:str, card_subtype: str, 
+    def __init__(self, cardID:int, card_type:str, card_subtype: str, 
     card_fix:bool, apply_to:str, max_players:int ) -> None:
         self.card_type =  card_type # event, panic
-        self.card_subtype = card_subtype #infection, action, defense, barrier
-        self.card_fix = card_fix #True - если владелец заражен, False, если нет
+        self.card_subtype = card_subtype #infection, action, defense, barrier, 
+        self.card_fix = card_fix #True - если владелец заражен и не может отдать карту, False, если нет
         self.apply_to = apply_to # neighbour, all
         self.max_players = max_players
 

@@ -1,0 +1,38 @@
+CardID; CardType; CardSubType; CardFix; CardApplyTo; MaxPlayers
+0;Action;Thing; True; Neighbour; 4
+1;Action;Infection; False; Neighbour; 4
+2;Action;Infection; False; Neighbour; 4
+3;Action;Infection; False; Neighbour; 4
+4;Action;Infection; False; Neighbour; 4
+5;Action;Infection; False; Neighbour; 4
+6;Action;Infection; False; Neighbour; 4
+7;Action;Infection; False; Neighbour; 4
+8;Action;Infection; False; Neighbour; 4
+9;Action;Infection; False; Neighbour; 10
+10;Action;Infection; False; Neighbour; 10
+11;Action;Infection; False; Neighbour; 9
+12;Action;Infection; False; Neighbour; 9
+13;Action;Infection; False; Neighbour; 8
+14;Action;Infection; False; Neighbour; 7
+15;Action;Infection; False; Neighbour; 7
+16;Action;Infection; False; Neighbour; 7
+17;Action;Infection; False; Neighbour; 6
+18;Action;Analis; False; Neighbour; 5
+19;Action;Fire; False; Neighbour; 11
+20;Action;Fire; False; Neighbour; 9
+21;Action;Fire; False; Neighbour; 6
+22;Action;Fire; False; Neighbour; 4
+23;Action;Fire; False; Neighbour; 4
+24;Action;Infection; False; Neighbour; 11
+25;Action;Infection; False; Neighbour; 11
+26;Action;Infection; False; Neighbour; 11
+27;Action;Suss; False; Neighbour;7
+28;Action;Suss; False; Neighbour;4
+29;Action;Suss; False; Neighbour;4
+30;Action;Suss; False; Neighbour;4
+31;Action;Suss; False; Neighbour;4
+32;Action;Axe; False; Neighbour;9
+33;Action;Axe; False; Neighbour;4
+34;Action;Analis; False; Neighbour; 9
+35;Action;Analis; False; Neighbour; 6
+
