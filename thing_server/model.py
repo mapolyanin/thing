@@ -7,20 +7,38 @@ Created on Wed Jan 12 14:39:44 2022
 
 import secrets
 import random
-from typing import List
+import time
+import hashlib
+
 
 
 
 class Game():
-    def __init___(self, state):
-        pass
+    """"""
+    def __init__(self):
+        self.game_hash = None #идентификатор игры. Надо кстати, покороче сделать
+        self.players = list() #список игроков в порядке их расположения
+        self.move_now:int = None #индекс игрока, который делает ход
+        self.direction_move = 1 #направление хода. 1 = по часовой, -1 = против часовой
+
+        
     
-    def create_game(self):
-        #Создаем игру
-        pass
+    def create_game(self, player_name:str) -> 'str':
+        """Определяем идентификатор игры. Для этого используем серверное время,
+         и делаем хэш из нее.
+         Создаем первого игрока, определяем его токен, добавляем его в очередь
+        """
+        nowtime = time.time()
+        game_hash = hashlib.md5(str(nowtime).encode()).hexdigest()
+        self.game_hash = game_hash
+        player = Player(player_name)
+        self.players.append(player)
+        return {'gameID': game_hash, 'playerID': player.token}
+        
     
     def start_game(self):
         #Начинаем игру
+        """"""
         pass
     
     def get_card(self):
@@ -30,9 +48,11 @@ class Game():
     def check_game_status(self):
         pass
     
-    def connect_to_game(self):
+    def connect_to_game(self, gameID:str, playerName:str):
+        
         #возвращаем токен, номер игрока и имя игрока
         pass
+
     
 class CardDeck():
     """
@@ -55,6 +75,9 @@ class CardDeck():
         self.game_deck = []
         self.cards_in_dec = 0
         self.folded_cards = []
+        
+    def read_card(self):
+        pass
 
         
     def create_deck(self, number_of_player:int):
@@ -65,11 +88,11 @@ class CardDeck():
         """Получить карту во время игры из колоды"""
         pass
 
-    def fold_card(self, card: Card):
+    def fold_card(self, card):
         """Сброс карты в сброшенную колоду"""
         pass
 
-    def shuffle_cards(self, deck:List) -> List:
+    def shuffle_cards(self, deck) -> list:
         """Перетасовать карты. Надо, чтобы он перетасовывал либо start_dec, либо game_dec
         Ну или сделать два разных метода"""
         pass
@@ -98,7 +121,26 @@ class Card():
     pass
 
 class Player():
-    """Свойства """
-    pass
+    """Свойства 
+    name - имя
+    hand - карты в руке
+    token - идентификатор для транзакций
+    thing:bool    
+    """
+    
+    def __init__(self, name:str) -> None:
+        self.name = name
+        self.thing:bool = False #Играет ли игрок роль Чужого
+        self.infected:bool = False #инфицирован ли игрок
+        self.token:str = hashlib.md5(''.join([str(nowtime), self.name]).encode()).hexdigest()
+        self.hand:list = []
+
+        
+
+if __name__ == '__main__':
+    game = Game()
+    answer = game.create_game('Mike_Pol')
+    print(answer)
+    
 
 

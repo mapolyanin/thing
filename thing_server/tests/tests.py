@@ -45,5 +45,4 @@ def test_exchange_cards():
 def test_set_state():
     assert set_state({token: '96f98970aa1aee0bc1b085bca99f1737'}) == 
 
-def test_    
-    assert 
+ 
