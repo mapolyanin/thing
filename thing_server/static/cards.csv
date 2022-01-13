@@ -1,38 +1,111 @@
-CardID; CardType; CardSubType; CardFix; CardApplyTo; MaxPlayers
-0;Action;Thing; True; Neighbour; 4
-1;Action;Infection; False; Neighbour; 4
-2;Action;Infection; False; Neighbour; 4
-3;Action;Infection; False; Neighbour; 4
-4;Action;Infection; False; Neighbour; 4
-5;Action;Infection; False; Neighbour; 4
-6;Action;Infection; False; Neighbour; 4
-7;Action;Infection; False; Neighbour; 4
-8;Action;Infection; False; Neighbour; 4
-9;Action;Infection; False; Neighbour; 10
-10;Action;Infection; False; Neighbour; 10
-11;Action;Infection; False; Neighbour; 9
-12;Action;Infection; False; Neighbour; 9
-13;Action;Infection; False; Neighbour; 8
-14;Action;Infection; False; Neighbour; 7
-15;Action;Infection; False; Neighbour; 7
-16;Action;Infection; False; Neighbour; 7
-17;Action;Infection; False; Neighbour; 6
-18;Action;Analis; False; Neighbour; 5
-19;Action;Fire; False; Neighbour; 11
-20;Action;Fire; False; Neighbour; 9
-21;Action;Fire; False; Neighbour; 6
-22;Action;Fire; False; Neighbour; 4
-23;Action;Fire; False; Neighbour; 4
-24;Action;Infection; False; Neighbour; 11
-25;Action;Infection; False; Neighbour; 11
-26;Action;Infection; False; Neighbour; 11
-27;Action;Suss; False; Neighbour;7
-28;Action;Suss; False; Neighbour;4
-29;Action;Suss; False; Neighbour;4
-30;Action;Suss; False; Neighbour;4
-31;Action;Suss; False; Neighbour;4
-32;Action;Axe; False; Neighbour;9
-33;Action;Axe; False; Neighbour;4
-34;Action;Analis; False; Neighbour; 9
-35;Action;Analis; False; Neighbour; 6
-
+CardID; CardType; CardSubType; CardFix; CardApplyTo; MaxPlayers;StopFactor;Название на русском;Описание;
+0;Action;Thing; True; Neighbour;4;;Нечто;;
+1;Action;Infection; False; Neighbour;4;;Инфицирование;;
+2;Action;Infection; False; Neighbour;4;;Инфицирование;;
+3;Action;Infection; False; Neighbour;4;;Инфицирование;;
+4;Action;Infection; False; Neighbour;4;;Инфицирование;;
+5;Action;Infection; False; Neighbour;4;;Инфицирование;;
+6;Action;Infection; False; Neighbour;4;;Инфицирование;;
+7;Action;Infection; False; Neighbour;4;;Инфицирование;;
+8;Action;Infection; False; Neighbour;4;;Инфицирование;;
+9;Action;Infection; False; Neighbour;10;;Инфицирование;;
+10;Action;Infection; False; Neighbour;10;;Инфицирование;;
+11;Action;Infection; False; Neighbour;9;;Инфицирование;;
+12;Action;Infection; False; Neighbour;9;;Инфицирование;;
+13;Action;Infection; False; Neighbour;8;;Инфицирование;;
+14;Action;Infection; False; Neighbour;7;;Инфицирование;;
+15;Action;Infection; False; Neighbour;7;;Инфицирование;;
+16;Action;Infection; False; Neighbour;7;;Инфицирование;;
+17;Action;Infection; False; Neighbour;6;;Инфицирование;;
+18;Action;Analis; False; Neighbour;5;;Анализ;;
+19;Action;Fire; False; Neighbour;11;;Огнемет;;
+20;Action;Fire; False; Neighbour;9;;Огнемет;;
+21;Action;Fire; False; Neighbour;6;;Огнемет;;
+22;Action;Fire; False; Neighbour;4;;Огнемет;;
+23;Action;Fire; False; Neighbour;4;;Огнемет;;
+24;Action;Infection; False; Neighbour;11;;Инфицирование;;
+25;Action;Infection; False; Neighbour;11;;Инфицирование;;
+26;Action;Infection; False; Neighbour;11;;Инфицирование;;
+27;Action;Suss; False; Neighbour;7;;Подозрение;;
+28;Action;Suss; False; Neighbour;4;;Подозрение;;
+29;Action;Suss; False; Neighbour;4;;Подозрение;;
+30;Action;Suss; False; Neighbour;4;;Подозрение;;
+31;Action;Suss; False; Neighbour;4;;Подозрение;;
+32;Action;Axe; False; Neighbour;9;;Топор;;
+33;Action;Axe; False; Neighbour;4;;Топор;;
+34;Action;Analis; False; Neighbour;9;;Анализ;;
+35;Action;Analis; False; Neighbour;6;;Анализ;;
+;Action;Perseverance; False;Self;6;;Упорство;;
+;Action;Perseverance; False;Self;4;;Упорство;;
+;Action;Perseverance; False;Self;4;;Упорство;;
+;Action;Wisky; False;Self;10;;Виски;;
+;Action;Wisky; False;Self;6;;Виски;;
+;Action;Wisky; False;Self;4;;Виски;;
+;Action;Suss; False; Neighbour;10;;Подозрение;;
+;Action;Suss; False; Neighbour;9;;Подозрение;;
+;Action;Suss; False; Neighbour;8;;Подозрение;;
+;Action;Swap; False; Neighbour;11;;Меняемся местами;;
+;Action;Swap; False; Neighbour;9;;Меняемся местами;;
+;Action;Swap; False; Neighbour;7;;Меняемся местами;;
+;Action;Swap; False; Neighbour;4;;Меняемся местами;;
+;Action;Swap; False; Neighbour;4;;Меняемся местами;;
+;Action;Swap; False;Neighbour;4;;Меняемся местами;;
+;Action;Direction; False;All;9;;Гляди по сторонам;;
+;Action;Direction; False;All;4;;Гляди по сторонам;;
+;Action;Perseverance; False;Self;10;;Упорство;;
+;Action;Perseverance; False;Self;9;;Упорство;;
+;Action;Temptation; False;All;7;;Соблазн;;
+;Action;Temptation; False;All;6;;Соблазн;;
+;Action;Temptation; False;All;4;;Соблазн;;
+;Action;Temptation; False;All;4;;Соблазн;;
+;Action;GoAway; False;All;11;;Сматывай удочки;;
+;Action;GoAway; False;All;9;;Сматывай удочки;;
+;Action;GoAway; False;All;7;;Сматывай удочки;;
+;Action;GoAway; False;All;4;;Сматывай удочки;;
+;Action;GoAway; False;All;4;;Сматывай удочки;;
+;Action;KeepPlace; False;Self;6;;Мне и здесь неплохо;;Эта карта скидывается, берешь карту события
+;Action;KeepPlace; False;Self;4;;Мне и здесь неплохо;;Эта карта скидывается, берешь карту события
+;Action;Fear; False;Self;11;;Страх;;
+;Action;Fear; False;Self;8;;Страх;;
+;Action;Fear; False;Self;6;;Страх;;
+;Action;Fear; False;Self;5;;Страх;;
+;Action;Temptation; False;All;11;;Соблазн;;
+;Action;Temptation; False;All;10;;Соблазн;;
+;Action;Temptation; False;All;8;;Соблазн;;
+;Action;NoBBQ; False;Self;4;;Никакого шашлыка;;
+;Action;Miss; False;Self;11;;Мимо;;Эта карта скидывается, берешь карту события
+;Action;Miss; False;Self;6;;Мимо;;Эта карта скидывается, берешь карту события
+;Action;Miss; False;Self;4;;Мимо;;Эта карта скидывается, берешь карту события
+;Action;NoThanks; False;Self;11;;Нет, спасибо;;Эта карта скидывается, берешь карту события
+;Action;NoThanks; False;Self;8;;Нет, спасибо;;Эта карта скидывается, берешь карту события
+;Action;NoThanks; False;Self;6;;Нет, спасибо;;Эта карта скидывается, берешь карту события
+;Action;NoThanks; False;Self;4;;Нет, спасибо;;Эта карта скидывается, берешь карту события
+;Action;KeepPlace; False;Self;11;;Мне и здесь неплохо;;Эта карта скидывается, берешь карту события
+;Action;Lovecraft; False;All;6;;Лавкрафт;Посмотреть карты у любого игрока;
+;Action;Necronomicon;False;All;10;;Некрономикон;Любой выбранный игрок выбывает из игры;
+;Action;LockDoor;False;Neighbour;11;;Запертая дверь;Между игроками не может осуществляться никаких действий и обменов;
+;Action;LockDoor;False;Neighbour;7;;Запертая дверь;Между игроками не может осуществляться никаких действий и обменов;
+;Action;LockDoor;False;Neighbour;4;;Запертая дверь;Между игроками не может осуществляться никаких действий и обменов;
+;Action;Quarantine;False;Neighbour;9;;На 3 хода игрок на которого сыграли карту, не может меняться картами, играть карты событий или становиться целью таких карт;;
+;Action;Quarantine;False;Neighbour;5;;На 3 хода игрок на которого сыграли карту, не может меняться картами, играть карты событий или становиться целью таких карт;;
+;Action;NoBBQ;False;Self;4;;Никакого шашлыка;Отменяет действие карты Огнемет, если стали ее целью. Эта карта скидывается, берешь карту события;
+;Panic;Domino;False;All;4;;Цепная реакция;Каждый игрок выбирает по карте и передает ее следующему по порядку хода игроку. Заколоченная дверь и карантин игнорируются. Отказаться от получения карт нельзя;
+;Panic;Forgetful;False;Self;4;;Сбросьте 3 карты с руки и возьмите три новые. Карты паники из прикупа сразу сбрасываются. ;;
+;Panic;Foff;False;All;5;;Убирайся прочь;Поменяйтесь местами с любым игроком, если он не на карантине;
+;Panic;Party;False;All;9;;И это вы называете вечеринкой?;Сыгранные карты Карантин и Запертая дверь сбрасываются. Начиная с вас, все игроки меняются местами друг с другом. При нечетном количестве игроков последний игрок остается на месте;
+;Panic;Party;False;All;5;;И это вы называете вечеринкой?;Сыгранные карты Карантин и Запертая дверь сбрасываются. Начиная с вас, все игроки меняются местами друг с другом. При нечетном количестве игроков последний игрок остается на месте;
+;Panic;OpenDoor;False;All;9;;…три, четыре, открывайте дверь пошире! ;"Все сыгранные карты ""Запертая дверь"" сбрасываются.";
+;Panic;OpenDoor;False;All;4;;…три, четыре, открывайте дверь пошире! ;"Все сыгранные карты ""Запертая дверь"" сбрасываются.";
+;Panic;OneTwo;False;All;9;;Раз, два… нечто поднялось со дна!;Поменяться местами с третьим игроком слева или справа. Игнорировать все заколоченные двери. С игроком на карантине смена мест не происходит.;
+;Panic;OneTwo;False;All;5;;Раз, два… нечто поднялось со дна!;Поменяться местами с третьим игроком слева или справа. Игнорировать все заколоченные двери. С игроком на карантине смена мест не происходит.;
+;Panic;TrueTime;False;All;8;;Время признаний;"Начиная с игрока и по порядку хода каждый игрок показывает, либо не показывает все карты на руке остальным игрокам. Время признаний заканчивается, когда кто-то из игроков показывает карту ""Заражение"", при этом нет необходимости показывать остальные карты";
+;Panic;OnlyYou;False;Neighbour;9;;Только между нами.;Покажите все карты на руке соседнему игроку по выбору.;
+;Panic;OnlyYou;False;Neighbour;7;;Только между нами.;Покажите все карты на руке соседнему игроку по выбору.;
+;Panic;Ooops;False;Self;9;;Уупс;Покажи все свои карты на руке остальным игрокам;
+;Panic;BlindDate;False;Self;9;;Свидание вслепую;Поменяйте все карты с руки на верхнюю карту общей колоды, сбрасывая попадающиеся карты паники. Ход заканчивается.;
+;Panic;BlindDate;False;Self;4;;Свидание вслепую;Поменяйте все карты с руки на верхнюю карту общей колоды, сбрасывая попадающиеся карты паники. Ход заканчивается.;
+;Panic;LetsBeFriends;False;All;9;;Давай дружить!;Поменяйтесь 1 картой с любым игроком (по вашему выбору), если он не на карантине;
+;Panic;LetsBeFriends;False;All;7;;Давай дружить!;Поменяйтесь 1 картой с любым игроком (по вашему выбору), если он не на карантине;
+;Panic;Domino;False;All;9;;Цепная реакция;Каждый игрок выбирает по карте и передает ее следующему по порядку хода игроку. Заколоченная дверь и карантин игнорируются. Отказаться от получения карт нельзя;
+;Panic;OldRope;False;All;9;;Старые веревки.;Карта отменяет действие сыгранных карт Карантин;
+;Panic;OldRope;False;All;6;;Старые веревки.;Карта отменяет действие сыгранных карт Карантин;
