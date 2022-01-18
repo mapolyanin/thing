@@ -5,7 +5,9 @@ Created on Thu Jan 13 14:34:13 2022
 @author: polyanin-ma
 """
 
-import unittest
+#import unittest
 
-from model import CardDeck
+#from model import CardDeck
+
+from contracts import contract
 

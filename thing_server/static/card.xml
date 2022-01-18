@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cards>
+
+    
+        <card id = "0">
+        <type>"Action"</type>
+        <name>Things</name>
+        <max_players> "4:1" </max_players>
+        <max_players>4</max_players>
+        <playerFix>"True"</playerFix>
+        <stop_cards></stop_cards>
+        <comment>"Карта Нечто. Выдается в начале игры (или в процессе)"</comment>
+        <apply_to>self</apply_to>
+        </card>
+        
+        <card id = "1">
+        <type>"Action"</type>
+        <name>Infection</name>
+        <max_players>"4:8, 6:1, 7: 3, 8: 1, 9: 2, 10:2 </max_players>
+        <playerFix>"False" </playerFix>
+        <stop_cards></stop_cards>
+        <comment>"Карта инфекции. Заражает человека, если ее передает Нечто. Нельзя отдать, если человек был заражен этой картой."</comment>
+        <apply_to>neighbour</apply_to>
+        </card>
+
+        <card id = "2">
+        <type>"Action"</type>
+        <name>"Analis"</name>
+        <max_players> "5:1, 6:1, 9:1" </max_players>
+        <playerFix>"False" </playerFix>
+        <stop_cards></stop_cards>
+        <comment>"Анализ. Применяется на соседа, позволяет посмотреть все его карты"</comment>
+        <apply_to>neighbour</apply_to>
+        </card>
+
+        <card id = "3">
+        <type>"Action"</type>
+        <name>"Analis"</name>
+        <max_players> "5:1, 6:1, 9:1" </max_players>
+        <playerFix>"False" </playerFix>
+        <comment></comment>
+        <apply_to>neighbour</apply_to>
+        </card>
+
+
+        <card id = "4">
+        <type>"Action"</type>
+        <name>"Axe"</name>
+        <max_players> "4:1, 9:1" </max_players>
+        <playerFix>"False" </playerFix>
+        <comment>"Топор. Применяется на соседние запертые двери."</comment>
+        <apply_to>neighbour</apply_to>
+        <stop_cards>None</stop_cards>
+        <apply_to>neighbour</apply_to>
+        </card>
+
+        <card id = "5">
+        <type>"Panic"</type>
+        <name>"BlindDate"</name>
+        <max_players> "4:1, 9:1" </max_players>
+        <playerFix>"False" </playerFix>
+        <comment>"Свидание вслепую."</comment>
+        <apply_to>self</apply_to>
+        <apply_to>neighbour</apply_to>
+        </card>
+
+
+        <card id = "6">
+        <type>"Action"</type>
+        <name>Direction</name>
+        <max_players> "4:1, 9:1" </max_players>
+        <playerFix>"False" </playerFix>
+        <comment>"Гляди по сторонам. Направление хода меняется в проттивоположную сторону."</comment>
+        <apply_to>All</apply_to>
+        <apply_to>neighbour</apply_to>
+        </card>
+
+        <card id = "7">
+        <type>"Panic"</type>
+        <name>"Domino"</name>
+        <max_players> "4:1, 9:1" </max_players>
+        <playerFix>"False </playerFix>
+        <comment>"Цепная реакция. Каждый игрок передает по одной карте следующему игроку. 
+        Отказаться от передачи карты нельзя. 
+        Игнорируются запертые двери и карантин"</comment>
+        <apply_to>All</apply_to>
+        </card>
+
+
+        <card id = "8">
+        <type>"Action"</type>
+        <name>"Fear"</name>
+        <max_players> "5:1, 6:1, 8:1,  11:1" </max_players>
+        <playerFix>"False" </playerFix>
+        <comment>""</comment>
+        <apply_to>All</apply_to>
+        </card>
+
+
+
+        
+        
+
+    </cards>

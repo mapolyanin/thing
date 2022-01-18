@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+thing_server/static/.~lock.cards.csv#

@@ -9,6 +9,10 @@ import secrets
 import random
 import time
 import hashlib
+import os
+import xml.etree.ElementTree as ET
+import xmltodict
+import json
 
 """ 
 Клиент может делать два типа запроса
@@ -122,12 +126,19 @@ class CardDeck():
         Создать колоду из сброшенных карт          
     """
     def __init__(self, count_of_player:int)-> None:
-        self.start_deck = []
-        self.game_deck = []
+        self.loaded_cards = [] # сюда загружаем все возможные карты из xml файла
+        self.start_deck = [] #Отсюда раздаем начальные карты
+        self.game_deck = [] #Здесь основная колода, из которой берут карты
         self.cards_in_dec = 0
-        self.folded_cards = []
+        self.folded_cards = [] #сброшенные карты. Когда game_deck становится пустой, из этой колоды туда помещаются карты
         
     def read_card(self):
+        __CARDS_FILE_PATH = r"thing_server/static/card.xml "
+        """Метод для чтения файла xml и создания новой полной колоды."""
+        print(os.getcwd())
+        print(os.path.isfile(__CARDS_FILE_PATH))
+
+
         pass
 
         
@@ -193,6 +204,10 @@ if __name__ == '__main__':
     game = Game()
     answer = game.create_game('Mike_Pol')
     print(answer)
+
+    deck = CardDeck(count_of_player = 4)
+
+    deck.read_card()
     
 
 
